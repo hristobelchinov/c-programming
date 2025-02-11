@@ -1,0 +1,9 @@
+all:
+		gcc safeint.c -c
+		gcc safeadd.c safeint.o -o safeadd
+		gcc safesubtract.c safeint.o -o safesubtract
+		gcc safemultiply.c safeint.o -o safemultiply
+		gcc safedivide.c safeint.o -o safedivide
+
+clean:
+		rm -f *.o safeadd safesubtract safemultiply safedivide
